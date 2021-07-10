@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlacknInked</title>
+    <style>
+        h1 { text-align: center;
+        color: #864000;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 10px;}
+
+        h2 { text-align: center;
+        color: #D44000;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 40px;
+        padding-bottom: 20px;
+        word-spacing: 0;}
+
+        h3 {text-align: center;
+        color: #D44000;
+        font-size: 16px;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 0px;}
+
+        a {text-decoration: none;}
+
+        button{color:#864000;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        padding: 16px 8px;
+        line-height: 18px;
+        background: #864000;
+        border: 3px solid #D44000;
+        border-radius: 5px 25px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+        transition: all 200ms ease}
+    
+        button:hover 
+       {background:#D44000;
+        cursor: pointer;
+        border: 3px solid #864000;}
+
+        .container{ max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;}
+
+        .mainText {text-align: justify;
+        font-weight: 500;}
+
+        .mainText,
+        .footer {color: #D44000;
+        font-size: 13px;
+        font-family: monospace;
+        line-height: 1.5;}
+
+        .instagram {color: #864000;
+        font-weight: bold;}
+
+        .videoLink {color: #D44000;
+        font-size: 14px;
+        font-family: monospace;}
+
+        .database {color: #FFEFCF;
+        font-size: 12px;}
+
+        .gallery {
+         display: grid ;
+         grid-gap: 10px;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));}
+         
+        .gallery img {
+        width: 100%;
+        max-height: 88%;
+        padding-bottom: 20px;}
+
+        .footer {text-align: center;
+        margin-top: 40px;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        Black and Inked
+    </h1>
+    <h2>
+        Celebrating tattooed Black skin
+    </h2>
+<div class="gallery">
+    <img src="C:\Users\lo\Dropbox\BnI Queue/Screenshot_20210505-115755_Instagram.jpg" alt="Black woman with floral rib tattoo">
+    <img src="C:\Users\lo\Dropbox\BnI Queue/Screenshot_20210505-115631_Instagram.jpg"  alt="Black man with back and arm tatoos posing in between two Black women">
+    <img src="C:\Users\lo\Dropbox\BnI Queue/Screenshot_20210628-170439_Instagram.jpg"  alt="Black woman with vine tattoo on ribs">
+</div>
+    <h3>
+        Mainstream tattoo culture is whitewashed.
+    </h3>
+    <span class="mainText">
+    <p>
+    I love tattoos, but until very recently, mainstream tattoo culture (online and irl) didn’t include me or anyone who looked even remotely like me. For decades the histories and traditions of black and brown peoples have been co-opted, dishonoured and erased. Black and POC artists are discriminated against within the industry, and consumers of colour are left to feel as though the art form is not for us. The wave of reckoning brought on by the Black Lives Matter movement has forced the long-overdue conversation about the issues of racism, sexism, ableism, homophobia and transphobia within the industry. I started
+    </span> 
+        <a href="https://www.instagram.com/blackninked/" target="_blank">
+    <span class="instagram">   
+        @BlacknInked
+    </span>
+        </a> 
+    <span class="mainText">
+    because as a black girl who loves tattoos, representation matters to me personally. I felt left out, so I decided to create a space where tattooed melanated skin was celebrated front and center. Where images weren’t desaturated, where no style was “too difficult to do on dark skin”. Black n Inked started as my own #inspo page but is slowly growing into a space for collective appreciation and joy.
+    </span>
+        <a href="https://www.instagram.com/tv/CGiUB3Vhi5k/?utm_source=ig_web_copy_link" target="_blank">
+    <span class="videoLink">
+            <strong> Watch the Black and Inked film.</strong>
+    </span>
+        </a>
+    </p>
+    </div>
+    <button class="database">
+            Global Artist Database
+    </button>
+   <div class="footer">
+    <p>
+        This page was built by Lala Oyegun
+    </p> 
+    </div>
+    </div>
+    <script>
+        function data() {
+            let artist= prompt("Are you, or do you know any artists committed to promoting diversity and equity within the tattoo industry?");}
+        
+            if (artist === "yes"){
+             window.open("https://docs.google.com/spreadsheets/d/1ef3D5JDP1SNe6wConMjUyHBHH_Gb9aLfeNTs0fq97dc/edit?usp=sharing");}
+
+        let dataButton = document.querySelector(".database");
+        dataButton.addEventListener("click", data);
+    </script>
+</body>
+</html>
